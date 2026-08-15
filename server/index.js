@@ -14,14 +14,18 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-const corsOption = {
-    origin: process.env.CLIENT_URL || 'https://hirevix-live.vercel.app',
-    credentials: true,
-};
+// Puraane corsOption ko hata kar ise paste karein
+app.use(cors({
+  origin: 'https://hirevix-live.vercel.app', // 'https://' lagana bilkul zaroori hai
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 
 connectDb();
 
-app.use(cors(corsOption));
+// app.use(cors(corsOption));
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
