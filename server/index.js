@@ -13,10 +13,19 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+const allowedOrigins = (process.env.CLIENT_URL || 'http://localhost:3000')
+    .split(',')
+    .map((origin) => origin.trim().replace(/\/$/, ''))
+    .filter(Boolean);
 
-// Puraane corsOption ko hata kar ise paste karein
 app.use(cors({
-  origin: 'https://hirevix-live.vercel.app', // 'https://' lagana bilkul zaroori hai
+    origin: (origin, callback) => {
+        if (!origin || allowedOrigins.includes(origin.replace(/\/$/, ''))) {
+            return callback(null, true);
+        }
+
+        return callback(new Error('Origin is not allowed by CORS'));
+    },
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
