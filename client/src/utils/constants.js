@@ -41,16 +41,16 @@ export const ZEGO_CONFIG = {
  */
 export const APP_CONFIG = {
   // Brand Information
-  APP_NAME: 'Hirevix Live',
-  APP_DESCRIPTION: 'The official recruitment, interview and collaboration platform by Hirevix. Conduct secure interviews, HR discussions, candidate assessments and professional meetings from anywhere.',
-  APP_TAGLINE: 'Powering Smarter Hiring',
+  APP_NAME: 'Sushmap-Live',
+  APP_DESCRIPTION: 'The official platform for meeting of Team Sushmap.',
+  APP_TAGLINE: 'Powering Smart Meetings and Collaboration',
   
   // Social Media Links
   SOCIAL_LINKS: {
     GITHUB: 'https://github.com',
     TWITTER: 'https://twitter.com',
     LINKEDIN: 'https://linkedin.com',
-    EMAIL: 'mailto:hr.hirevex@gmail.com',
+    EMAIL: 'mailto:support@sushmap.com',
   },
   
   // Footer Links
@@ -76,39 +76,39 @@ export const APP_CONFIG = {
   FEATURES: [
     {
       icon: 'FaVideo',
-      title: 'Professional HD Interviews',
-      description: 'Conduct seamless HD interviews and hiring discussions with candidates from anywhere.',
-      shortDescription: 'Professional interview experience',
-      color: 'blue'
+      title: 'Professional HD Meetings',
+      description: 'Conduct seamless HD meetings and discussions with teams from anywhere.',
+      shortDescription: 'Professional meeting experience',
+      color: 'orange'
     },
     {
       icon: 'FaComments',
-      title: 'Live Hiring Collaboration',
-      description: 'Collaborate with recruiters, HR teams and candidates using live chat and screen sharing.',
-      shortDescription: 'Recruitment collaboration',
+      title: 'Live Meeting Collaboration',
+      description: 'Collaborate with teams and participants using live chat and screen sharing.',
+      shortDescription: 'Meeting collaboration',
       color: 'green'
     },
     {
       icon: 'FaShieldAlt',
-      title: 'Secure Interview Platform',
-      description: 'Private interview rooms with secure authentication for professional hiring.',
-      shortDescription: 'Secure interview sessions',
+      title: 'Secure Meeting Platform',
+      description: 'Private meeting rooms with secure authentication for professional collaboration.',
+      shortDescription: 'Secure meeting sessions',
       color: 'purple'
     },
     {
       icon: 'FaUsers',
-      title: 'Hirevix Recruitment Workspace',
-      description: 'Manage interviews, assessments and recruitment meetings from one unified platform.',
-      shortDescription: 'Complete recruitment workspace',
+      title: 'Sushmap meeting Workspace',
+      description: 'Manage meetings, discussions and team collaboration from one unified platform.',
+      shortDescription: 'Complete meeting workspace',
       color: 'indigo'
     }
   ],
   
   // Benefits Data (for Home page)
   BENEFITS: [
-    'Professional interview rooms',
-    'Candidate assessments',
-    'HR collaboration',
+    'Professional meetings rooms',
+    'Team collaboration',
+    'Participant communication',
     'Screen sharing',
     'Secure authentication',
     'Accessible anywhere'
@@ -116,33 +116,33 @@ export const APP_CONFIG = {
   
   // Trust Indicators (for Hero section)
   TRUST_INDICATORS: [
-    'Built for Recruiters',
-    'Part of Hirevix Ecosystem',
-    'Secure Hiring Platform'
+    'Built for Sushmap',
+    'Part of Sushmap Ecosystem',
+    'Secure meeting Platform'
   ],
   
   // Home Page Content
   HOME_CONTENT: {
     HERO: {
-      BADGE_TEXT: 'Official Product of the Hirevix Ecosystem',
+      BADGE_TEXT: 'Official Product of the Sushmap Ecosystem',
       HEADING: 'Power Your',
-      HEADING_HIGHLIGHT: 'Hiring Journey',
-      SUBHEADING: 'Hirevix Live enables recruiters, HR teams and candidates to conduct secure interviews, assessments and hiring discussions through one professional collaboration platform.',
+      HEADING_HIGHLIGHT: 'Sushmap Journey',
+      SUBHEADING: 'Sushmap-Live enables teams and participants to conduct secure meetings and discussions through one professional collaboration platform.',
       CTA_AUTHENTICATED: 'Go to Dashboard',
-      CTA_PRIMARY: 'Start Interview',
+      CTA_PRIMARY: 'Start meeting',
       CTA_SECONDARY: 'Sign In',
     },
     FEATURES: {
-      HEADING: 'Everything Required For Modern Recruitment',
-      DESCRIPTION: 'Built for recruiters, hiring managers, organizations and candidates.',
+      HEADING: 'Everything Required For Modern Meetings',
+      DESCRIPTION: 'Built for Sushmap users, teams, organizations and meeting participants.',
     },
     BENEFITS: {
-      HEADING: 'Why Hirevix Live?',
-      DESCRIPTION: 'A recruitment-first collaboration platform designed as a core product of the Hirevix ecosystem.',
+      HEADING: 'Why Sushmap-Live?',
+      DESCRIPTION: 'A meeting-first collaboration platform designed as a core product of the Sushmap ecosystem.',
     },
     CTA: {
-      HEADING: 'Ready To Hire Smarter?',
-      DESCRIPTION: 'Experience professional recruitment collaboration with Hirevix Live.',
+      HEADING: 'Ready To Meeting?',
+      DESCRIPTION: 'Experience professional meeting collaboration with Sushmap-Live.',
       BUTTON_AUTHENTICATED: 'Go to Dashboard',
       BUTTON_GUEST: 'Get Started',
     },
@@ -152,25 +152,25 @@ export const APP_CONFIG = {
   DASHBOARD_CONTENT: {
     WELCOME: {
       GREETING: 'Welcome back, {userName}! 👋',
-      DESCRIPTION: 'Create or join professional interview sessions and collaborate with your hiring team.',
+      DESCRIPTION: 'Create or join professional meeting sessions and collaborate with your team.',
     },
     ACTION_CARDS: {
       HOST: {
-        TITLE: 'Host Interview',
-        DESCRIPTION: 'Create a secure interview room for recruitment and assessments.',
-        BUTTON: 'Create Interview',
+        TITLE: 'Host Meeting',
+        DESCRIPTION: 'Create a secure meeting room for your team and participants.',
+        BUTTON: 'Create Meeting',
         BUTTON_LOADING: 'Creating...',
       },
       JOIN: {
-        TITLE: 'Join Interview',
-        DESCRIPTION: 'Enter an Interview ID shared by your recruiter or HR.',
-        BUTTON: 'Join Interview',
+        TITLE: 'Join Meeting',
+        DESCRIPTION: 'Enter a Meeting ID shared by your host or meeting organizer.',
+        BUTTON: 'Join Meeting',
       },
     },
     SESSIONS_LIST: {
-      HEADING: 'Interview Sessions',
-      DESCRIPTION: 'Manage your active and previous recruitment sessions.',
-      LOADING: 'Loading interview sessions...',
+      HEADING: 'Meeting Sessions',
+      DESCRIPTION: 'Manage your active and previous meeting sessions.',
+      LOADING: 'Loading meeting sessions...',
       EMPTY: 'No sessions yet.',
       FILTER_ALL: 'All',
       FILTER_ACTIVE: 'Active',
@@ -183,17 +183,17 @@ export const APP_CONFIG = {
   // Session Content
   SESSION_CONTENT: {
     JOIN_FORM: {
-      HEADING: 'Join Interview',
-      DESCRIPTION: 'Enter the Interview ID provided by your recruiter.',
-      ROOM_ID_LABEL: 'Interview ID',
-      ROOM_ID_PLACEHOLDER: 'Enter Interview ID',
-      ROOM_ID_HELP: 'Ask your recruiter or HR for the Interview ID.',
-      BUTTON: 'Join Interview',
+      HEADING: 'Join Meeting',
+      DESCRIPTION: 'Enter the Meeting ID provided by your Host.',
+      ROOM_ID_LABEL: 'Meeting ID',
+      ROOM_ID_PLACEHOLDER: 'Enter Meeting ID',
+      ROOM_ID_HELP: 'Ask your host or meeting organizer for the Meeting ID.',
+      BUTTON: 'Join Meeting',
       BUTTON_LOADING: 'Joining...',
     },
     INFO_CARD: {
-      HEADING: 'Interview Details',
-      ROOM_ID_LABEL: 'Interview ID',
+      HEADING: 'Meeting Details',
+      ROOM_ID_LABEL: 'Meeting ID',
       SHAREABLE_LINK_LABEL: 'Shareable Link',
       COPY_BUTTON: 'Copy',
       COPIED_BUTTON: 'Copied!',
@@ -201,50 +201,50 @@ export const APP_CONFIG = {
       PARTICIPANTS_LABEL: 'Participants',
     },
     HEADER: {
-      HOSTING_TITLE: 'Hosting Interview',
-      JOINING_TITLE: 'Interview Session',
-      END_SESSION_BUTTON: 'End Interview',
+      HOSTING_TITLE: 'Hosting Meeting',
+      JOINING_TITLE: 'Meeting Session',
+      END_SESSION_BUTTON: 'End Meeting',
     },
     VIDEO: {
-      TITLE: 'Live Interview',
+      TITLE: 'Live meeting',
       CONNECTED: 'Connected',
       FULLSCREEN: 'Fullscreen',
-      CONNECTING: 'Connecting to secure interview room...',
-      LEAVE_BUTTON: 'Leave Interview',
-      END_BUTTON: 'End Interview',
+      CONNECTING: 'Connecting to secure meeting room...',
+      LEAVE_BUTTON: 'Leave Meeting',
+      END_BUTTON: 'End Meeting',
     },
     PARTICIPANTS: {
-      HEADING: 'Interview Participants',
+      HEADING: 'Meeting Participants',
       HOST_LABEL: 'Host',
       PARTICIPANT_LABEL: 'Participant',
       JOINED_USERS_LABEL: 'Joined Users',
-      EMPTY_MESSAGE: 'Participants will appear here after joining the interview.',
+      EMPTY_MESSAGE: 'Participants will appear here after joining the meeting.',
     },
   },
   
   // Auth Content
   AUTH_CONTENT: {
     LOGIN: {
-      HEADING: 'Welcome To Hirevix Live',
-      DESCRIPTION: 'Sign in to manage interviews and recruitment sessions.',
+      HEADING: 'Welcome To Sushmap-Live',
+      DESCRIPTION: 'Sign in to manage your meetings and collaboration sessions.',
     },
     REGISTER: {
-      HEADING: 'Create Your Hirevix Account',
-      DESCRIPTION: 'Join the Hirevix ecosystem and start hosting professional interviews.',
+      HEADING: 'Create Your Sushmap-Live Account',
+      DESCRIPTION: 'Join the Sushmap ecosystem and start hosting professional meetings.',
     },
   },
   
   // Loading Messages
   LOADING_MESSAGES: {
-    SESSION: 'Loading interview...',
-    SESSIONS: 'Loading interview sessions...',
+    SESSION: 'Loading meeting...',
+    SESSIONS: 'Loading meeting sessions...',
     GENERAL: 'Loading...',
   },
   
   BRANDING_GUIDELINES: {
-    IDENTITY: "Always refer to the platform as 'Hirevix Live'.",
-    ECOSYSTEM: 'Whenever possible mention that Hirevix Live is a product within the Hirevix Ecosystem.',
-    TONE: 'Professional, premium, enterprise-grade, HR-tech focused.',
+    IDENTITY: "Always refer to the platform as 'Sushmap-Live'.",
+    ECOSYSTEM: 'Whenever possible mention that Sushmap-Live is a product within the Sushmap Ecosystem.',
+    TONE: 'Professional, premium, enterprise-grade, meeting and collaboration focused.',
     AVOID: [
       'Live class platform',
       'Education platform',
@@ -254,15 +254,13 @@ export const APP_CONFIG = {
       'Zoom clone'
     ],
     PREFERRED_KEYWORDS: [
-      'Recruitment',
-      'Hiring',
-      'Interview',
-      'Candidate Assessment',
-      'HR Collaboration',
-      'Talent Acquisition',
-      'Hiring Workspace',
-      'Recruitment Platform',
-      'Hirevix Ecosystem'
+      'Meetings',
+      'Team Collaboration',
+      'Video Conferencing',
+      'Screen Sharing',
+      'Meeting Participants',
+      'Collaboration Workspace',
+      'Sushmap Ecosystem'
     ]
   }
 };

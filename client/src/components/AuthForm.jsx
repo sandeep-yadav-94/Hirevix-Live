@@ -202,16 +202,16 @@ const AuthForm = ({
             <p className="text-sm text-gray-600">
                 {isLogin ? (
                     <>
-                     Don't have a Hirevix Live account?{' '}
+                     Don't have a Sushmap-Live account?{' '}
                      <Link to={ROUTES.REGISTER} className="font-medium text-blue-600 hover:text-blue-500 transition-colors">
-                      Create your Hirevix account
+                      Create your Sushmap-Live account
                      </Link>
                     </>
                 ): (
                     <>
                        Already have an account?{' '}
                      <Link to={ROUTES.LOGIN} className="font-medium text-purple-600 hover:text-purple-500 transition-colors">
-                      Sign in to Hirevix Live
+                      Sign in to Sushmap-Live
                      </Link>
                     </>
                 )}
